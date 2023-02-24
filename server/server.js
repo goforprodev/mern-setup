@@ -8,7 +8,7 @@ const CURRENT_WORKING_DIR = process.cwd();
 const app = express();
 
 const url =
-  process.env.MONGODB_URI || "mongodb+srv://promise:helloworld22@posshop.gels5ab.mongodb.net/test";
+  process.env.MONGODB_URI || "mongodb+srv://promise:<password>@<your_db>.gels5ab.mongodb.net/test";
 let port = process.env.PORT || 3000;
 
 MongoClient.connect(url, (err, db) => {
